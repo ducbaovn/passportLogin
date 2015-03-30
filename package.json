@@ -1,0 +1,33 @@
+{
+  "name": "authenticate",
+  "version": "0.0.1",
+  "description": "Module Signup, Login With Facebook, Google Using Passport - TotalJS",
+  "main": "debug.js",
+  "scripts": {
+    "start": "node debug.js"
+  },
+  "dependencies": {
+    "total.js": "1.7.2",
+    "mysql": "^2.5.4",
+    "q": "1.2.0",
+    "request":"2.53.0",
+    "passport" : "~0.1.17",         
+    "passport-local" : "~0.1.6",    
+    "passport-facebook" : "~1.0.2",
+    "passport-google-oauth" : "~0.1.5",
+    "connect-flash" : "~0.1.1",     
+    "bcrypt-nodejs" : "latest"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": "https://github.com/ducbaovn/bbbfund.git",
+  "keywords": [
+    "node",
+    "heroku",
+    "totaljs",
+    "passport"
+  ],
+  "license": "ducbaovn",
+  "author": "ducbaovn"
+}

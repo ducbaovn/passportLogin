@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Cờ Tướng Úp</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+
+    <h1><span class="fa fa-user"></span> Connect Local Account</h1>
+
+    @{if (model.message.length>0)}
+        <div class="alert alert-danger">@{model.message}</div>
+    @{fi}
+
+    <!-- LOGIN FORM -->
+    <form action="/connect/localExist" method="post">
+        <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="username">
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg">Connect Local</button>
+    </form>
+
+    <hr>
+
+    <p><a href="/profile">Go back to profile</a></p>
+
+</div>
+</div>
+</body>
+</html>
